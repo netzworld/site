@@ -18,4 +18,3 @@ Here I **should** be progressing in my learning of web development as a side-hob
 	+ Such as hosting a web server on a Raspberry Pi
 	
 ---
-Hello!
