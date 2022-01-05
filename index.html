@@ -7,23 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Randazzo</title>
 </head>
-
-<body>
-
-    <header>
+        
         <nav class="navbar-main">
-            <a href="index.html">Home</a> |
+            | <a href="index.html">Home</a> |
             <a href="#">Interesting Stuff</a> |
             <a href="#">Pictures</a> |
             <a href="#">JavaScript Tests</a> |
         </nav>
-        <section class="navbar-main--sec">
-            <optgroup>
-                <option value="Dark">Dark</option>
-                <option value="Light">Light</option>
-                <option value="Light Blue">Li. Blue</option>
-            </optgroup>
-        </section>
+        <!--
+            Attempt to make a color changing option selector here
+        -->
+        <script>
+            var since = new Date().getTime();
+            var cntDown = new Date();
+            cntDown.setTime(cntDown.getTime()+3000);
+
+            goCrazy(id){
+                var now = cntDown - since;
+                document.body.style.backgroundColor = 
+                for(var i = 0; i < now; i++){
+                    document.body.style.backgroundColor = "blue";
+                }
+            }
+        </script>
+  
+            
+        <button type="reset" id="coolButton1" onfocus="goCrazy(this.id);"></button>
     </header>
     
 
