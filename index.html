@@ -19,20 +19,18 @@
         -->
         <script>
             var since = new Date().getTime();
-            var cntDown = new Date();
-            cntDown.setTime(cntDown.getTime()+3000);
+            
 
-            goCrazy(id){
-                var now = cntDown - since;
-                document.body.style.backgroundColor = 
-                for(var i = 0; i < now; i++){
-                    document.body.style.backgroundColor = "blue";
-                }
+            function goCrazy(id){
+                document.getElementById(id).style.color = "green";
+                document.getElementById(id).style.height = "20px";
+                document.getElementById(id).style.width = "30px";
+                
             }
         </script>
   
             
-        <button type="reset" id="coolButton1" onfocus="goCrazy(this.id);"></button>
+        <button id="coolButton1" onfocus="goCrazy(this.id);"></button>
     </header>
     
 
