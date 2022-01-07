@@ -1,7 +1,41 @@
+body{
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+header{
+    border: 5px solid red;
+}
+
 .backsplash {
-    padding: 0;
-    margin: 0 0 0 0;
-    
-    height: 20vh;
-    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30vh;
+    width: 100%;
+    z-index: -2;
+}
+
+.tribar-nav-menu{
+    border: 2px solid yellow;
+    position: relative;
+    display: inline-block;
+    left: 40%;
+    right: 40%;
+    height: 30px;
+    width: 30px;
+}
+
+.navbar{
+    border: 10px solid green;
+}
+
+.navbar-expanded{
+    border: 5px solid blue;
+}
+
+.navbar-item{
+    list-style-type: none;
 }
