@@ -6,62 +6,71 @@ body{
     margin: 0;
 }
 
-header{
-    background: var(--header-background);
-    text-align: left;
-    position: absolute;
-    z-index: 999;
-    width: 100%;
-
+#space{
+    height: 40em;
 }
 
-.logo {
-    display: inline-block;
-    margin-left: 1.4em;
-}
-
-#navbar-list {
-    list-style: none;
-    display: inline-flex;
+#middle{
+      
+    position: relative;
+   
     
 }
-#navbar-list a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.2em;
-    margin: 0 1em;
-}
 
-ul#navbar-list li a:hover{
-    color: white;
-}
-
-.backsplash{
-       width: 100%;
-       height: 100vh;
-       z-index: -3;
-       position: absolute;
-       background-image: url("img/backsplash1.jpg");
-       background-size: cover;
-       background-position: center;     
-}
-
-.body--image {
-    margin-left: 1em;
-    width: 20em;
-}
-
-.body--image-right{
-    text-align: right;
-}
-
-section.main-body {
+#ten-count, 
+#twenty-count, 
+#fifty-count, 
+#hundred-count{
     position: absolute;
-    top: 10em;
+    left: 10%;
+    width: fit-content;
+    top: 20%;
+    font-size: 10em;
+    overflow-wrap: unset;
+    transition: color ease-out;
+    opacity: 0;
+    
 }
 
-.body--text--section{
-    margin-left: .6em;
-    background: rgba(235, 167, 218, 0.712)
+#ten-count::selection{
+    color: red;
 }
-.body--text {}
+
+
+
+
+button#center-button{
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 200px;
+
+    display: block;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+
+    color: indigo;
+    background-color: pink;
+    border: .4em solid pink;
+    border-radius: 50%;
+}
+
+#center-button:hover{
+    color: blue;
+    font-size: 2em;
+}
+
+#mountains{
+
+    height: 40em;
+}
+
+div img {
+    width: 100%;
+    height: inherit;
+}
